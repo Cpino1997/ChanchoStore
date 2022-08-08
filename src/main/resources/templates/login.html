@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <div th:replace="head :: head"></div>
+</head>
+<body>
+<section class="container-fluid">
+    <form action="/" method="post" id="login">
+       <section class="form-register centro"> 
+        <br>
+        <br>
+        <h1>KevinStore</h1>
+        <h1> PinoLabs </h1>
+        <br>
+        <br>
+        <br>
+        <div class="set-1">
+        <input class="controls" type="text" name="username" id="username" placeholder="Ingrese su nombre de usuario"required maxlength="15">
+        </div>
+        <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su contraseña" required maxlength="15">
+        <!-- Submit Button -->
+        <div>
+            <br>
+            <input class="botons" type="submit" value="ingresar">
+            <p><a class="link" href="#registro" onclick="MostrarReg()">no tienes cuenta?</a></p> 
+        </div>
+      </section>
+    </form>
+
+<form action="/" method="post" id="registro">
+       <section class="form-register centro"> 
+        <br>
+        <br>
+        <h1>KevinStore</h1>
+        <h1> PinoLabs </h1>
+        <br>
+        <br>
+        <br>
+        <div class="set-1">
+        <input class="controls" type="text" name="username" id="username" placeholder="Ingrese su nombre de usuario"required maxlength="15">
+        </div>
+        <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su contraseña" required maxlength="15">
+        <!-- Submit Button -->
+        <div>
+            <br>
+            <input class="botons" type="submit" value="ingresar">
+            <p><a class="link" href="#login" onclick="MostrarLog()">Ya tienes cuenta?</a></p> 
+        </div>
+      </section>
+    </form>
+    
+
+</section>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+</body>
+</html>

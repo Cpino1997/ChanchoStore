@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu</title>
+</head>
+<body>
+<div id="nav" th:fragment="menu">
+  <nav class="navbar navbar-expand-lg text-uppercase">
+    <div class="container-fluid">
+      <a class="navbar-brand" th:href="@{/}">PinoLabs</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav centro">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" th:href="@{/home}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" th:href="@{/cliente/all}">Clientes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" th:href="@{/producto/all}">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" th:href="@{/venta/all}">Venta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" th:href="@{/test}">Tests</a>
+          </li>
+              <li class="nav-item">
+            <a class="nav-link" th:href="@{/login}">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" th:href="@{/}">Salir</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+</body>
+</html>

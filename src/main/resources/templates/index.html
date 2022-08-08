@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>ChanchoStore</title>
+</head>
+<body>
+<header>
+    <div th:replace="nav :: menu"></div>
+</header>
+<center><h1>Estoy Funcionando!</h1></center>
+<section class="container-fluid rojo centro">
+    <div class="col centro">
+        <a th:href="@{/cliente/all}" class="btn btn-primary">Ver Clientes</a>
+        <a th:href="@{/productos/all}" class="btn btn-primary">Ver Productos</a>
+        <a th:href="@{/ventas/all}" class="btn btn-primary">Ver Productos</a>
+        <a th:href="@{/producto/new}" class="btn btn-primary">Agregar Producto</a>
+    </div>
+</section>
+
+<script th:src="@{/js/inicio.js}"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body{
+    background-image: url('https://pinolab.000webhostapp.com/css/img/fondo.jpg');
+}
+
+.centro{
+    margin: auto;
+    text-align:center;
+}
+.rojo{
+    background-color:red;
+
+}
+
+/** Pruebas **/
+#grilla-web{
+
+    width: 90%;
+
+    margin: auto;
+
+    text-align: center;
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    grid-template-rows: auto;
+
+    grid-gap: 10px;
+
+  }
+
+  .card{
+
+    width:100%;
+
+    text-align: center;
+
+    font-size: 10px;
+
+    background: #24303c;
+
+    color: whitesmoke;
+
+    margin: auto;
+
+    border-style: solid;
+
+    border-radius: 10px;
+
+    font-family: 'monospace';
+
+    box-shadow: 7px 7px 17px #000;
+
+    padding: 15px;
+
+    height: 400;
+
+  }
+
+  .card img {
+
+    width: 100%;
+
+  }
+
+  .card span{
+
+    color: #6e6e6e;
+
+    font-weight: 50
+}
+  /** form-login **/
+
+  .form-register {
+  width: 400px;
+  background: #24303c;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align:center;
+}
+
+.controls {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+}
+
+.form-register p {
+  height: 45px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.form-register a {
+  color: white;
+  text-decoration: none;
+}
+
+.form-register a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.form-register .botons {
+  width: 100%;
+  background: #1f53c5;
+  border: 15px;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+  font-family: monospace;
+  text-align: center;
+}
+.form-register .link{
+    color: #1f53c5;
+}
+
+#registro{display: none;}
+#login{display: block;}

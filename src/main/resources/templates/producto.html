@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <div th:replace="head :: head"></div>
+</head>
+
+<body>
+
+<header>
+  <h1><center>Crear Producto</center></h1>
+</header>
+
+<main>
+    <section class="container">
+
+        <!-- nombre -->
+        <div class="row">
+          <div class="col-md centro">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control-plaintext" id="nombre" name="nombre"
+                   th:value="${producto.getNombreProducto()}" readonly>
+          </div>
+        </div>
+        <!-- nombre -->
+
+        <!-- Descripcion -->
+        <div>
+          <div class="col-md centro">
+            <label for="descripcion" class="form-label">Descripcion</label>
+            <input type="text" class="form-control centro" id="descripcion" name="descripcion"
+                   th:value="${producto.getDescProducto()}">
+          </div>
+        </div>
+        <!-- Descripcion -->
+
+        <!-- Precio -->
+        <div class="row">
+          <div class="col-md centro">
+              <label for="precio" class="form-label">Precio</label>
+              <input type="text" class="form-control centro" id="precio" name="precio" th:value="${producto.getPrecioProducto()}">
+          </div>
+        </div>
+        <!-- Precio -->
+
+        <!-- Stock -->
+        <div class="row">
+          <div class="col-md centro">
+              <label for="stock" class="form-label">Stock</label>
+              <input type="text" class="form-control centro" id="stock" name="stock" th:value="${producto.getStockProducto()}">
+          </div>
+        </div>
+        <!-- Stock -->
+
+        <!-- botones -->
+        <div class="row">
+          <div class="col-md centro">
+                  <a class="btn btn-primary">Guardar</a>
+                  <a th:href="@{/producto/all}" class="btn btn-primary">volver</a>
+          </div>  
+        </div>
+        <!-- botones -->
+    </section>
+<!--Listado prod-->
+ 
+</main>
+
+<!-- footer -->
+<footer>
+  <section class="container-fluid">
+    <div th:replace="footer :: footer"></div>
+  </section>
+</footer>
+<!-- footer -->
+
+<!-- Scrípts -->
+<script>
+    $(document).ready( function () {
+    $('#estudiantes').DataTable();
+} );
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+<!-- Scrípts -->
+
+</body>
+</html>
